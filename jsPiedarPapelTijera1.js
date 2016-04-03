@@ -14,7 +14,7 @@ function comenzar()
 
 }//FIN DE LA FUNCIÓN
 
-/*
+
 function piedra()
 {
 		if(eleccionMaquina==2)
@@ -31,32 +31,35 @@ function piedra()
 }//FIN DE LA FUNCIÓN
 function papel()
 {
-		if(eleccionMaquina==3)
-		{
-			resultado="Pierde";
-		}
+	if(eleccionMaquina==3)
+	{
+		resultado="Pierde";
+	}
 
-		if (eleccionMaquina==1)
-		{
-			resultado="Gana";
-		}
+	if (eleccionMaquina==1)
+	{
+		resultado="Gana";
+	}
+	alert(resultado);	
 
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
-		if(eleccionMaquina==1)
-		{
-			resultado="Pierde";
-		}
+	if(eleccionMaquina==1)
+	{
+		resultado="Pierde";
+	}
 
-		if (eleccionMaquina==2)
-		{
-			resultado="Gana";
-		}
+	if (eleccionMaquina==2)
+	{
+		resultado="Gana";
+	}
+	alert(resultado);
 
 }//FIN DE LA FUNCIÓN
-*/
 
+
+/*
 function Jugar(eleccionUsuario)
 {
 
@@ -118,3 +121,4 @@ function Jugar(eleccionUsuario)
 
 	alert(mostrarEleccionMaquina+" "+resultado);
 }
+*/

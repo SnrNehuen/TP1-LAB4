@@ -9,6 +9,8 @@ miAplicacion.controller('control',function($scope){
 	$scope.ganadas=0;
 	$scope.perdidas=0;
 	$scope.empatadas=0;
+	$scope.imagenEleccionMaquina="imagenes/interrogacion.jpg";
+	console.log("hola");
 
 	//$scope.perdidas=20;
 	$scope.Jugar=function(eleccionUsuario){
@@ -17,18 +19,21 @@ miAplicacion.controller('control',function($scope){
 		$scope.comenzar();
 	if ($scope.eleccionMaquina==1) 
 	{
+		$scope.imagenEleccionMaquina="imagenes/piedra.jpg";
 		$scope.mostrarEleccionMaquina="Maquina: Piedra!";
 		//document.getElementById("imagenEleccion").setAttribute("src", "imagenes/piedra.jpg");
 	}
 
 	if ($scope.eleccionMaquina==2) 
 	{
+		$scope.imagenEleccionMaquina="imagenes/papel.jpg";
 		$scope.mostrarEleccionMaquina="Maquina: Papel!";
 		//document.getElementById("imagenEleccion").setAttribute("src", "imagenes/papel.jpg");
 	}
 
 	if ($scope.eleccionMaquina==3) 
 	{
+		$scope.imagenEleccionMaquina="imagenes/tijera.jpg";
 		$scope.mostrarEleccionMaquina="Maquina: Tijera!";
 		//document.getElementById("imagenEleccion").setAttribute("src", "imagenes/tijera.jpg");
 	}

@@ -10,7 +10,7 @@
 		<!--final de Estilos-->
 
 		<!--Lógica-Programación-->
-		<script type="text/javascript" src="jsPiedarPapelTijera2.js"></script>
+		<!--<script type="text/javascript" src="jsPiedarPapelTijera2.js"></script>-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 		<script type="text/javascript" src="controladorPiedraPapelTijera2.js"></script>
@@ -18,7 +18,7 @@
 		
 
 		</head>
-	<body onload=comenzar() ng-app="ejemplo" ng-controller="control">
+	<body ng-app="ejemplo" ng-controller="control">
 		<div class="CajaUno animated bounceInDown">
 			
 
@@ -31,7 +31,8 @@
 			{{test}}-->
 			<form id="FormIngreso">
 				<center>
-					<img id="imagenEleccion" src="imagenes/interrogacion.jpg" >
+					<!--<img id="imagenEleccion" src="imagenes/interrogacion.jpg" >-->
+					<img ng-src="{{imagenEleccionMaquina}}" >
 				</center>
 				
 			</form>

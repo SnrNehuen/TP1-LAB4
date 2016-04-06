@@ -10,27 +10,30 @@
 		<!--final de Estilos-->
 
 		<!--Lógica-Programación-->
-		<script type="text/javascript" src="jsAgilidadAritmetica1.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="jsControladorAgilidadAritmetica1.js"></script>
         <!--Final de Lógica-Programación -->
 		
 
 		</head>
-	<body onload=comenzar()>
+	<body ng-init=comenzar() ng-app="AgilidadAritmetica1" ng-controller="logica">
 		<div class="CajaUno animated bounceInDown">
 			
 
-			<input type="text" readonly id="PrimerNumero" value="">
-			<input type="text" readonly id="Operador">
-			<input type="text" readonly id="SegundoNumero" value="">
+			<input type="text" readonly ng-model="uno">
+			<input type="text" readonly ng-model="operador">
+			<input type="text" readonly ng-model="dos">
+			<center></br><h2>{{mensaje}}</h2></center></br>
 			<form id="FormIngreso">
-				<input type="text"  id="Respuesta">
+				<input type="text"  ng-model="respuesta">
 				<center>
 					<img src="imagenes/interrogacion.jpg" >
 				</center>
 				
 			</form>
-			<button  class="MiBotonUTN" onclick=Responder() >Aceptar</button>
+			<button  class="MiBotonUTN" ng-click=responder() >Aceptar</button>
+			<button  class="MiBotonUTN" ng-click=comenzar() >Nuevo Número</button>
 		</div>
 		<div class="CajaUno animated bounceInLeft">
 			

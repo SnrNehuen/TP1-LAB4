@@ -10,7 +10,7 @@ miAplicacion.controller('control',function($scope){
 	$scope.perdidas=0;
 	$scope.empatadas=0;
 	$scope.imagenEleccionMaquina="imagenes/interrogacion.jpg";
-	console.log("hola");
+	//console.log("hola");
 
 	//$scope.perdidas=20;
 	$scope.Jugar=function(eleccionUsuario){

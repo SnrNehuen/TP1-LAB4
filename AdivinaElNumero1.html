@@ -10,30 +10,31 @@
 		<!--final de Estilos-->
 
 		<!--Lógica-Programación-->
-		<script type="text/javascript" src="jsAdivinaElNumero1.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="controladorAdivinaElNumero1.js"></script>
         <!--Final de Lógica-Programación -->
 		
 
 		</head>
-	<body>
+	<body ng-app="AdivinaElNumero1" ng-controller="logica">
 		<div class="CajaUno animated bounceInDown">
 			
 		
 			<form id="FormIngreso">
 
-				<input type="text"  placeholder="Ingrese número" id="numero">
+				<input type="text"  placeholder="Ingrese número" id="numero" ng-model="numero">
 				
 				<br>
-				<input id="intentos" type="text"  value="" placeholder="intentos" readonly>
+				<input id="intentos" type="text"  value="Intentos" readonly ng-model="contador">
 			</form>
-			
+			<center></br><h2>{{mensaje}}</h2></center>
+
 		</div>
 		<div class="CajaUno animated bounceInLeft">
 			
-		<button style="height:5em;"  class="MiBotonUTN"  onclick=verificar(); >Verificar</button>
-			
-		<button  class="MiBotonUTN" onclick=comenzar(); >Comenzar</button>
+		<button style="height:5em;"  class="MiBotonUTN"  ng-click="verificar()">Verificar</button>
+		<button  class="MiBotonUTN" ng-click="comenzar()">Comenzar</button>
 
 		</div>
 

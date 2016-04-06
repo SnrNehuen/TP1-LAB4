@@ -15,7 +15,7 @@ PiedraPapelTijera1.controller('logica',function($scope)
 		console.log("comenzar");
 		$scope.imagenEleccionMaquina="imagenes/interrogacion.jpg";
 		$scope.eleccionMaquina=Math.floor(1+Math.random() * 3);
-		alert("hola");
+		//alert("hola");
 
 	}
 

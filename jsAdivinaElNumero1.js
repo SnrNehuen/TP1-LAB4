@@ -43,6 +43,8 @@ function verificar()
 		alert("Usted es un ganador!!! y en solo "+contadorIntentos+" intentos");
 	}
 
+	
+
 	//alert(contadorIntentos);
 	//document.getElementById("intentos")[0].setAttribute("readonly", "");
 	//alert("read only borrado?");
